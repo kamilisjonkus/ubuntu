@@ -1,0 +1,30 @@
+#cloud-config
+autoinstall:
+    version: 1
+    locale: "en_US.UTF-8"
+    keyboard:
+        layout: us
+    source:
+        search_drivers: false
+        id: ubuntu-server-minimal
+    proxy: null
+    storage:
+        layout:
+            name: lvm
+    identity:
+        realname: scanwatch
+        username: scanwatch
+        hostname: scanwatch
+        password: $6$cVf86r69AjwYrMCW$ffnpoIub7RcfUrAGqLO6b0m6upJMnjrMTDhw//JPS5qsDumQ7uvSk23chhHl8OMU79jzjCTLzPLDalUrL0C/O0
+    codecs:
+        install: false
+    drivers:
+        install: false
+    oem:
+        install: false
+    timezone: "Etc/UTC"
+    updates: security
+    shutdown: reboot
+    reporting:
+        builtin:
+            type: print
