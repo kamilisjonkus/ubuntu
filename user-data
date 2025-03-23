@@ -11,6 +11,7 @@ autoinstall:
     storage:
         layout:
             name: lvm
+            sizing-policy: all
     identity:
         realname: scanwatch
         username: scanwatch
